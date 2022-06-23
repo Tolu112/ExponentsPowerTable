@@ -29,22 +29,22 @@ while (runProgram)
 
     static int CalculateSquare(int value)
     {
-        double CalculateSquare = Math.Pow(value, 2.00);
-        return (int)CalculateSquare;
+      double CalculateSquare = Math.Pow(value, 2.00);
+      return (int)CalculateSquare;
     }
 
     //Cube the integer; Use method double numSquared = Math.Pow(num, 2.00);
     static int CalculateCube(int value)
     {
-        double CalculateCube = Math.Pow(value, 3.00);
-        return (int)CalculateCube;
+      double CalculateCube = Math.Pow(value, 3.00);
+      return (int)CalculateCube;
     }
 
     //get out of loop
     Console.Write("\n" + "Would you like to continue? y/n ");
     string loopChoice = Console.ReadLine();
-    if (loopChoice.ToLower().Trim() == "y") { runProgram = true; continue; }
-    else if (loopChoice.ToLower().Trim() == "n") runProgram = false; Console.WriteLine("\n" + "Goodbye!"); break;
+    if (loopChoice.ToLower().Trim() == "y") { runProgram = true; }
+    else if (loopChoice.ToLower().Trim() == "n") runProgram = false; Console.WriteLine("\n" + "Goodbye!"); 
 }
 
 
